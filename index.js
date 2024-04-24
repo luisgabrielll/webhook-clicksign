@@ -14,10 +14,17 @@ app.get("/", (req, res) => {
 });
 
 app.post("/webhook", (req, res) => {
-  console.log('chamei')
+  console.log('chamei no webhook clicksign')
+  console.log(req.body);
+});
+
+app.post("/webhook/docusign", (req, res) => {
+  console.log('chamei no webhook docusign')
   console.log(req.body);
 });
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
+
