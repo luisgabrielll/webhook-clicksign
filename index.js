@@ -23,9 +23,10 @@ app.post("/webhook/docusign", (req, res) => {
   console.log(req.body);
 });
 
-app.get("/webhook/pagarme", (req, res) => {
+app.post("/webhook/pagarme", (req, res) => {
   console.log('chamei no webhook pagarme')
   console.log(req.body.data.customer.phones);
+  return res.json({ goat: 'luix' })
 });
 
 app.listen(port, () => {
