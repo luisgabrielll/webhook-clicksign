@@ -23,7 +23,7 @@ app.post("/webhook/docusign", (req, res) => {
   console.log(req.body);
 });
 
-app.post("/webhook/pagarme", (req, res) => {
+app.get("/webhook/pagarme", (req, res) => {
   console.log('chamei no webhook pagarme')
   console.log(req.body.data.customer.phones);
 });
