@@ -23,6 +23,11 @@ app.post("/webhook/docusign", (req, res) => {
   console.log(req.body);
 });
 
+app.post("/webhook/pagarme", (req, res) => {
+  console.log('chamei no webhook clicksign')
+  console.log(req.body);
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
