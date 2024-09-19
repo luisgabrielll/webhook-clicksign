@@ -24,8 +24,8 @@ app.post("/webhook/docusign", (req, res) => {
 });
 
 app.post("/webhook/pagarme", (req, res) => {
-  console.log('chamei no webhook clicksign')
-  console.log(req.body);
+  console.log('chamei no webhook pagarme')
+  console.log(req.body.data.customer.phones);
 });
 
 app.listen(port, () => {
