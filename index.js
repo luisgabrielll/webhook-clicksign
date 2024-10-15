@@ -25,7 +25,8 @@ app.post("/webhook/docusign", (req, res) => {
 
 app.post("/webhook/pagarme", (req, res) => {
   console.log('chamei no webhook pagarme')
-  console.log(req.body.data.customer.phones);
+  console.log('MEU BODY', req.body);
+  console.log('MINHA DATA', req.body.data);
   return res.json({ goat: 'luix' })
 });
 
